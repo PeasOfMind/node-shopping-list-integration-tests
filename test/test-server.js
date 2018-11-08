@@ -233,5 +233,26 @@ describe("Recipes", function(){
     );
   })
 
+  it("should send 400 bad request if POST is missing a required field", function(){
+    const badUpdate = {
+      ingredients: ["1 cup brown rice", "1.25 cup water", "pinch of salt"]
+    };
+    return (
+      chai.request(app)
+      .get("/recipes")
+      .then(function(res){
+        badUpdate.id = res.body[0].id;
+        return chai
+        .request(app)
+        .put(`/recipes/${badUpdate.id}`)
+        .send(badUpdate)
+      })
+      .then(function(res){
+        expect(res).to.have.status(400);
+      })
+    )
+
+  });
+
 
 });
