@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: bZPJYJEB3TDlSeejcsFQbwzLPL6RHRPWurR+GsZL9wBQ2r8SC3BN9hRnagTHLvVA4cq/l4f3OMA2hhQfzaYmvm5PZxx9Ud7CW6QTotanA/jW5pA7XxAV1/bRcr0dxGwt1BzvQjGxJ1CnMmMNWxjYbjf/lSO3TXP5/76vsms0RgXiJNImHCdR8lY4RsQKhw5LHZJ1FgLlL6qidny03R0jO7s++9cFWPnHp4o9gChSABiy+CRkg6Czw/lTtPZWprF5EZRrAO34VEyY+aFB/8Krp/5+sXLiplFh2X/qSSj17dTVz0araSvg14EqO/c/y/0h4KmDUqcUgu11eNuVy8DACzvbz44trrDPFSLXmUpfGEUX/EalQHSGd9P59rQ7t3Cwx/qD4r0ziuk5XoXOY0P1U/6w9iPD30W4NhTRfhh29gzjQ6POUQMFCxfbqvjMuGtqy5W5S2ZEP23SkyvT75xSYTHOeOBkMMab54NgEams56RZyx5kTlGypJwv9hQWiCLT/WFnnUpc+Aq6E2ZVsoI9CikmndSBORhqwNm/Czj/Mn7Jq9iR0LeN/B8R1Nulp57a5FVV4x+/rnk8jaRoMBpBHRlpTjktbOKodYsews8Y35IFlcUjzp0y/5s3w5ZkBUMANTPfY7iFhxeQwLuvJgRyOZaxCSMvKvoUksBUabxnaeE=
+  app: hidden-depths-57337
+  on:
+    repo: PeasOfMind/node-shopping-list-integration-tests
